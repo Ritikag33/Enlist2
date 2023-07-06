@@ -1,0 +1,28 @@
+const express = require('express');
+const Tender = require('../model/tender_form');
+const router = express.Router();
+
+router.get('/', (req,res) => {
+    res.redirect('/tenders');
+})
+
+
+router.get('/tenders',(req,res) => {
+    Tender.find().then(result => {
+        res.render('tenders',{tenders:result})
+    }).catch(err => {
+        console.log(err);
+    })
+})
+
+router.get('/tenders/create',(req,res) => {
+    res.render('create');
+})
+
+router.post('/tenders',(req,res) => {
+    const tender = new Tender(req.body);
+
+    tender.save().then(result => {res.redirect('/tenders')}).catch((err) => console.log(err));
+})
+
+module.exports = router;

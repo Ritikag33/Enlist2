@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@100&family=Signika+Negative:wght@400;700&family=Source+Code+Pro:wght@200&display=swap');
+
+
+*{
+    margin: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #353535;
+}
+
+form{
+    color: #f7b731;
+}
+
+
+.inputAddress{
+    width: 10px;
+    color: red;
+}
+
+button{
+    margin-top: 30px;
+}
+
+
+.btn{
+    background-color: #f7b731;
+    border-color: #f7b731;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #f2a65a;
+    border-color: #f2a65a;
+}
+
+
+
+

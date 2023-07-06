@@ -1,0 +1,30 @@
+<html lang="en">
+    <%- include("./partials/header.ejs") %>
+<body>
+    <nav>
+        <div class="site-title">
+            <a href="/"><h1>Blog Ninjas</h1></a>
+            <p>A Net Ninja Site</p>
+        </div>
+        <ul>
+            <li><a href="/">Tenders</a></li>
+            <li><a href="/tenders/create">New Tender</a></li>
+        </ul>
+    </nav>
+
+    <h2>All Tenders</h2>
+    <% if (tenders.length> 0) { %>
+        <% tenders.forEach(tender => { %>
+            <a href = '/tenders/<%= tender._id %>'>
+                <h3><%= tender.company_name %></h3>
+                <p><%= tender.event_name %></p>
+            </a>
+        <% })  %>
+    <% } else{ %>
+        <p>No Tenders to display</p>
+    <% } %>
+
+</body>
+</html>
+
+<!-- This ejs file is currently not being used in the project -->

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Name Page</title>
+  <link rel="stylesheet" href="/tender_styles.css">
+</head>
+<body>
+
+  <div class="event-container">
+        <% if (tenders.length > 0) { %>
+            <% tenders.forEach(tender => { %>
+            <div class="event-card">
+                    <img src="/images/g-1.jpg" alt="Event Name" class="event-pic">
+                    <div>
+                      <h2 class="event-name">Event Name: <%= tender.event_name %></h2>
+                      <p class="event-details">
+                        <li>Location : <%= tender.city %></li>
+                        <li>Budget : <%= tender.expectedBudget %></li> 
+                        <li>Date : <%= tender.month %></li>
+                      </p>
+                    </div>
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
+    <!-- <div class="event-card">
+      <img src="images/g-1.jpg" alt="Event Name" class="event-pic">
+      <div>
+        <h2 class="event-name">Event Name</h2>
+        <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+      </div>
+    </div>
+    <div class="event-card">
+      <img src="images/g-2.jpg" alt="Event Name" class="event-pic">
+      <div>
+        <h2 class="event-name">Event Name</h2>
+        <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+      </div>
+    </div>
+    <div class="event-card">
+      <img src="images/g-3.jpg" alt="Event Name" class="event-pic">
+      <div>
+        <h2 class="event-name">Event Name</h2>
+        <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+      </div>
+    </div>
+    <div class="event-card">
+        <img src="images/g-4.jpg" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/g-5.jpg" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/g-6.jpg" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/g-7.jpg" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/g-8.jpg" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/g-9.jpg" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/pic-1.png" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/pic-2.png" alt="Event Name" class="event-pic">
+        <div>
+          <h2 class="event-name">Event Name</h2>
+          <p class="event-details"><li>Location :</li><li>Budget :</li> <li>Date :</li></p>
+        </div>
+      </div> -->
+
+  </div>
+</body>
+</html>
